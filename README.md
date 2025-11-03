@@ -22,9 +22,13 @@ The Raspberry Pi executes **Python** scripts with **MAVSDK** to send flight comm
 ### Basic Packages and Tools
 Run the following commands on your Raspberry Pi:
 
-### Install MAVSDK (Python)
-python3 -m pip install --upgrade pip
-python3 -m pip install mavsdk
+### Create and activate a Python virtual environment
+cd ~/Desktop/Codes-Drone/Raspberry-Pi-Drone
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install mavsdk
+
 
 ## 🔌 Connecting the Raspberry Pi to the Pixhawk
 
@@ -41,8 +45,11 @@ ls /dev/tty*
 git clone https://github.com/CaioBonvicine/Raspberry-Pi-Drone.git
 cd Raspberry-Pi-Drone
 
-2. Run the script:
-python3 "Name of the code you want to run".py
+2. Start the venv:
+source venv/bin/activate
+
+3. Start the code:
+python3 "Name_of_the_code_you_want_to_run.py"
 
 ## ⚙️ Common Issues
 
