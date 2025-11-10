@@ -23,6 +23,8 @@ The Raspberry Pi executes **Python** scripts with **MAVSDK** to send flight comm
 Run the following commands on your Raspberry Pi:
 
 ### Create and activate a Python virtual environment
+
+
 cd ~/Desktop/Codes-Drone/Raspberry-Pi-Drone
 python3 -m venv venv
 source venv/bin/activate
@@ -45,11 +47,9 @@ ls /dev/tty*
 git clone https://github.com/CaioBonvicine/Raspberry-Pi-Drone.git
 cd Raspberry-Pi-Drone
 
-2. Start the venv:
-source venv/bin/activate
-
-3. Start the code:
-python3 "Name_of_the_code_you_want_to_run.py"
+2. Start the venv and run the code:
+source ~/Desktop/Codes-Drone/Raspberry-Pi-Drone/venv/bin/activate
+python3 basic_flight.py
 
 ## ⚙️ Common Issues
 
